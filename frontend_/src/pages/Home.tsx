@@ -19,9 +19,9 @@ const Home: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl font-bold mb-6">
+            <h1 className="text-5xl font-bold dark:text-gray-300 mb-8">
               Hi, I'm{' '}
-              <span className="text-primary">Your Name</span>
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Sagar Singh</span>
             </h1>
             <h2 className="text-3xl text-gray-600 dark:text-gray-300 mb-6">
               AI/ML Developer & BTech Final Year Student
@@ -36,7 +36,7 @@ const Home: React.FC = () => {
               <motion.a
                 href="/resume.pdf"
                 download
-                className="flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors"
+                className="flex items-center gap-2 bg-primary  hover:text-white bg-gray-200 px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -45,7 +45,7 @@ const Home: React.FC = () => {
               
               <motion.button
                 onClick={handleVoiceCommand}
-                className="flex items-center gap-2 border border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-white transition-colors"
+                className="flex items-center gap-2 border border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary  hover:text-white bg-gray-200 hover:bg-blue-600 transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -55,10 +55,10 @@ const Home: React.FC = () => {
 
             {/* Social Links */}
             <div className="flex space-x-6">
-              <a href="https://github.com/yourusername" className="text-2xl text-gray-600 hover:text-primary">
+              <a href="https://github.com/yourusername" className="text-gray-600 hover:text-white bg-gray-200 hover:bg-blue-600 rounded-full p-2 shadow-md hover:shadow-xl transform hover:scale-110 transition-all duration-300">
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com/in/yourusername" className="text-2xl text-gray-600 hover:text-primary">
+              <a href="https://linkedin.com/in/yourusername" className="text-gray-600 hover:text-white bg-gray-200 hover:bg-blue-600 rounded-full p-2 shadow-md hover:shadow-xl transform hover:scale-110 transition-all duration-300">
                 <FaLinkedin />
               </a>
             </div>
@@ -81,7 +81,7 @@ const Home: React.FC = () => {
               animate={{ y: [-10, 10, -10] }}
               transition={{ duration: 3, repeat: Infinity }}
             >
-              <div className="text-sm font-semibold">Face Detection</div>
+              <div className="text-sm font-semibold dark:text-gray-300 ">Face Detection</div>
             </motion.div>
             
             <motion.div
@@ -89,7 +89,7 @@ const Home: React.FC = () => {
               animate={{ y: [10, -10, 10] }}
               transition={{ duration: 3, repeat: Infinity, delay: 1 }}
             >
-              <div className="text-sm font-semibold">JARVIS AI</div>
+              <div className="text-sm font-semibold dark:text-gray-300">JARVIS AI</div>
             </motion.div>
           </motion.div>
         </div>
